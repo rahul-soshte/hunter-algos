@@ -32,20 +32,38 @@ return 0;
 
 void shellsort(int a[],int n)
 {
-int gap;//increment
-gap=n/2;
-int *end;
+int gap=n/2;//increment
 int temp;
+int x;
+int k;
+int *end;
+int i;
+int j;
+while(gap>=1)
+{
+for (int i = gap; i < n; i=i+gap)
+{
+	/* code */
+	//In place of 1 there should be gap
+x=a[i];
+	for(k=i-gap;k>=0;k=k-gap)
+	{
+		if(x>a[k])
+		{
+			a[k+gap]=x;
+			break;
+		}
+		else
+		{
+			temp=a[k];
+			a[k]=a[k+gap];
+			a[k+gap]=temp;
+			}
 
-for(i=0;i<n;i++)
-{
-if(a[i]>a[i+gap])
-{
-temp=a[i];
-a[i]=a[i+gap];
-a[i+gap]=temp;
+	}
 
 }
-}
+gap=gap/2;
 
+}
 }
