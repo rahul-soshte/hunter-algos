@@ -53,7 +53,7 @@ x=a[i];
 			a[k+gap]=x;
 			break;
 		}
-		else
+		e lse
 		{
 			temp=a[k];
 			a[k]=a[k+gap];
