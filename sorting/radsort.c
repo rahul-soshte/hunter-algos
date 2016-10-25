@@ -1,16 +1,17 @@
 /*
--Use 2-d array for sorting data
--find max no
+
+-find max no-done
+-Use 2-d array for sorting data-d
 -and go through every element of array and if less digits than max add that many zeroes to the start
 -then for sorting go through each no and its digits 
+-Insertion program
 -and send to the specific bucket
 */
 #include<stdio.h>
 
-void radsort(int a[][],int n,int max,int mndigit);
+void radsort(int a[][],int n,int mndigit);
 int findmax(int a[],int n);
 int findNoOfDigits(int);
-void addZero(int a[],int ndigit,int mndigit);
 
 int main()
 {
@@ -31,7 +32,7 @@ scanf("%d",&a[i]);
 max=findmax(a,n);
 mndigit=findNoOfDigits(max);
 
-radsort(a,n,max,mndigit);
+radsort(a,n,mndigit);
 
 printf("Sorted Elements are:\n");
 for(i=0;i<n;i++)
@@ -59,26 +60,36 @@ return max;
 }
 
 int findNoOfDigits(int a){
-int q=a/10;
 int digit=0;
 
-while(q!=0)
-	{		
-digit++
+do{		
 q=a/10;
-	}
+digit++;
+}while(q!=0)
+
 	return digit;
 }
-void addZero(int a[],int ndigit,int mndigit){
-	for (int i = 0; i < count; ++i)
+void addZero(int a[][],int n,int ndigit,int mndigit){
+	for (int i = 0; i < n; ++i)
 	{
 		//adding zero code
+		if(ndigit<mndigit)
+		{
+			for(i=0;i<(mndigit-ndigit);i++)
+			{
+
+			}
+		ndigit++;
+
+			}
+		}
 	}
-}
+
 void radsort(int a[][],int n,int max,int mndigit)
 {
 int q[10][n];
+copyto2ddim(a,findNoOfDigits);
 
-addZero(a[i],findNoOfDigits,mndigit);
+addZero(a[i],findNoOfDigits(a[i]),mndigit);
 
 }
