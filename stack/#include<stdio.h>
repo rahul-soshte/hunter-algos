@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+typedef struct{
+	int data;
+	struct node *next;
+
+}node;
+
+typedef struct{
+	node *front;
+	node *rear;
+}queue;
