@@ -178,7 +178,7 @@ else printf("element found at position %d\n",++pos);
 
 }
 
-void lin_search(int a[],int n,int b)
+void lin_search(int a[],int n,int b)e
 {
 	int c=0;
 	int i;
