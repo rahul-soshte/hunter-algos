@@ -74,7 +74,6 @@ if(root!=NULL)
 }
 }
 
-
 void insertion(treenode **root,int x){
 	treenode *p,*ptr,*prev;
 	ptr=(treenode*)malloc(sizeof(treenode));

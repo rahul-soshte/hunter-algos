@@ -1,11 +1,11 @@
 #include<stdio.h>
  
-
+ 
   int partation(int [],int,int);
 
   void quick_sort(int [],int,int);
-
-   void merge_sort(int [],int,int);
+    
+  void merge_sort(int [],int,int);
 
  void merge(int [],int ,int,int);
 
