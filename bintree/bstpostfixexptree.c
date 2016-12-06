@@ -44,13 +44,17 @@ void createtree(char e[])
 	struct stack s;
 	s.top=-1;
 
-	for(i=0;e[i]!='\0';i++)
+op1=NULL;
+op2=NULL;
+
+
+	for(i=0;e[i]!='\0';i++){
 		if(isoperand(e[i]))
 		{
 			pnode=(struct node*)malloc(sizeof(struct node));
 			pnode->data=e[i];
-			pnode->left=op1;
-			pnode->right=op2;
+			pnode->left=op2;
+			pnode->right=op1;
 			push(&s,pnode);
 
 		}
@@ -59,11 +63,12 @@ void createtree(char e[])
 			op2=pop(&s);
 			pnode=(struct node*)malloc(sizeof(struct node));
 			pnode->data=e[i];
-			pnode->left=op1;
-			pnode->right=op2;
+			pnode->left=op2;
+			pnode->right=op1;
 			push(&s,pnode);
 
 		}
+	}
 	root=pop(&s);
 }
 
