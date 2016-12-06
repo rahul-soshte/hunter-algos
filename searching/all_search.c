@@ -124,29 +124,7 @@ return;
 
 
 	}
-/*
-	if(val<kid[j]){
-		for(i=j;i<n;i++)
-		{
-			if(a[i]==val)
-			{
-				pos=i;
 
-			}
-		}
-
-}
-*/
-/*for(i = 1; i < j;i++)
-{
-	if(a[k]==val)
-	{
-		pos=k;
-		break;
-
-	}
-}
-*/
 else{
 	for(i=1;i<j;i++)
 		if(val<kid[i])
