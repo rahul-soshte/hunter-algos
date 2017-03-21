@@ -21,21 +21,21 @@ int main()
 		scanf("%s",&b[i]);
 
 	}
-printf("Enter the value of adajancy of matrix in from 'y' or 'n'\n");
+printf("Enter the value of adajancy of matrix in 'y' or 'n'\n");
 printf("If there exists  an edge between two vertices than 'y' otherwise 'n'\n");
 for(i=0;i<n;i++)
-printf("%c",b[i]);
+printf("%c\t",b[i]);
 
 for(i=0;i<n;i++)
 {
-	printf("\n%c",b[i]);
+	printf("%c",b[i]);
 	for(j=0;j<n;j++)
 	{
 		scanf("%c",&v);
 		ajMat[i][j]=v;
 
 	}
-	printf("\n\n");
+	printf("\n");
 }
 for(i=0;i<n;i++)
 bfs(i);
@@ -43,6 +43,7 @@ bfs(i);
 display();
 
 }
+
 void display()
 {
 	int i;
@@ -101,5 +102,4 @@ m=del();
 arr[p]=m;
 p++;
 return 0;
-
 }

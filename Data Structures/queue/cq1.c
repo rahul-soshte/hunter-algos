@@ -11,7 +11,7 @@ int cQueue[SIZE],front=-1,rear=-1;
 void main()
 {
 	int choice,value;
-
+	
 	while(1){
 		printf("\n***MENU***\n");
 		printf("1.Insert\n2.Delete\n3.display\n4.Exit");
@@ -40,13 +40,14 @@ void  deQueue()
 		printf("Circular Queue is Empty!\n");
 	else{
 		printf("Deleted element is %d\n",cQueue[front++]);
-	
+
 		if(front-1==rear)
 			front=rear=-1;
 	if(front==SIZE)
 			front=0;
 	}
 }
+
 void enQueue(int value)
 {
 if(front==0 && rear==SIZE-1 || front==rear+1)

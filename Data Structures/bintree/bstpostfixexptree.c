@@ -53,8 +53,8 @@ op2=NULL;
 		{
 			pnode=(struct node*)malloc(sizeof(struct node));
 			pnode->data=e[i];
-			pnode->left=op2;
-			pnode->right=op1;
+			pnode->left=NULL;
+			pnode->right=NULL;
 			push(&s,pnode);
 
 		}

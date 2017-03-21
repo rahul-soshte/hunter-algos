@@ -188,7 +188,7 @@ void merge_sort(int a[],int low,int high)
  
 
 void heap(int a[],int n)
-
+ 
 {  int s,f,i;
 
     for(i=1;i<n;++i)
