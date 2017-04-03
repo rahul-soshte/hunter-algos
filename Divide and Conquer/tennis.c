@@ -8,7 +8,4 @@ int main()
 	//Divide the players into 2 sets
 	//Recursively till 2 people remain
 	//Each set takes n/2-1 days
-	
-
-
 }
