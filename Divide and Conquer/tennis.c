@@ -1,6 +1,6 @@
 //TennisTournamentScheduling
 #include<stdio.h>
-int days;
+int highdays;
 int players;
 
 int main()
@@ -26,27 +26,25 @@ if(n%2!=0)
 low=0;
 high=n-1;
 players=n;
-days=n;
+highdays=n-1;
 
 	int schedule[players][days];
 
 
 mid=(low+high)/2;
-int set1[mid][mid];
-int set2[hig-mid][hig-mid];
+int set1[players][days];
 
 	
 	for(i=0;i<players;i++)
 	{
 		for(j=0;j<days;j++)
 		{
-			schedule[i][j]=-1;
-			
+			schedule[i][j]=-1;	
 		}
 	
 	}
 		
-	tennis(schedule,set1,set2,playerset1,playerset2,daylowset1,daylowset2,dayhighset1,dayhighset2);
+	tennis(schedule,set1,set2,playerset1,playerset2,days);
 	
 	for(i=0;i<players;i++)
 	{
@@ -63,21 +61,31 @@ int set2[hig-mid][hig-mid];
 	//Each set takes n/2-1 days
 }
 
-void tennis(schedule,set1,set2,playerlowset1,playerhighset1,playerlowset2,playerhighset1,days)
+void tennis(schedule,set1,playerlowset1,playerhighset1,lowdays,highdays)
 {
+	for(i=lowdays;i<(highdays-1);i++)
+	{
+	int mid;
 	
+		
 	if((playerhighset1-playerlowset1)==2)
 	{
-		set1[playerlowset1][days]=playerhighset1;
-		set1[playerhighset1][days]=playerlowset1;
-		
-	}
-	if((playerhighset2-playerlowset2)==2)
-	{
-		set1[playerlowset2][days]=playerhighset2;
-		set1[playerhighset2][days]=playerlowset2;
-		
+		schedule[playerlowset1][lowdays]=playerhighset1;
+		schedule[playerhighset1][lowdays]=playerlowset1;
+		return;
 	}
 	
+	mid=(playerlowset1+playerhighset1)/2;
+	tennis(schedule,set1,playerlowset1,mid,lowdays,highdays)
+	tennis(schedule,set1,mid+1,playerhighset1,lowdays,highdays);
+	merge_tennis(schedule,playerlowset1,mid,playerhighset1,lowdays,highdays);
+	lowdays++;
+	
+	}
+	
+}
+
+void merge_tennis(int schedule[][],int playerlowset1,int mid,int playerhighset1,int lowdays,int highdays)
+{
 	
 }
