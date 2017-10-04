@@ -1,0 +1,2 @@
+To Add file in ClassPath:
+export CLASSPATH=$CLASSPATH:gson-2.8.1.jar
