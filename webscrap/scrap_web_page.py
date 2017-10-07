@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import urllib2
 
-url = "https://www.goodreads.com/quotes/tag/love"
+url = "https://stackoverflow.com/questions/45687034/how-to-change-layout-when-rotate"
 page = urllib2.urlopen(url)
 soup = BeautifulSoup(page.read())
 
