@@ -1,0 +1,17 @@
+i=1
+count=1
+m=`expr $# % 2`
+if[$m -eq 0]
+then 
+for i in $*
+do
+count=`expr $count + 1`
+i=$count
+n=`expr $count - 1`
+cp $c $count
+fi
+done
+else 
+echo "ODD"
+fi
+ 

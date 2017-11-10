@@ -1,10 +1,6 @@
 from bs4 import BeautifulSoup
-import urllib2
 
-#soup = BeautifulSoup(open("soupexample12.html"))
-url = "https://www.pexels.com/search/nature/"
-page = urllib2.urlopen(url)
-soup = BeautifulSoup(page.read())
+soup = BeautifulSoup(open("soupexample12.html"))
 
 final_link = soup.p.a
 final_link.decompose()
