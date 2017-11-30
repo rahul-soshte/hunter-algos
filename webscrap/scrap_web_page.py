@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import urllib2
 
-url = "https://www.pexels.com/search/nature/"
+url = "https://stupidsid.com/reader/operating-systems-1103/104475"
 #page = urllib2.urlopen(url)
 #soup = BeautifulSoup(page.read())
 
