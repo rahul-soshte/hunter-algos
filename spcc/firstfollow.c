@@ -7,12 +7,14 @@
 char production[25][25];
 //char firstfound[100][100];
 int productionfound[100];
+int productionfoundforfollow[100];
 int firstcount=0;
 char follow[100];
 int followcount=0;
 //int elementforfirstfoundcount=0;
 int bufferproductionfound[100];
-
+int episolonfound=0;
+int episolontempfound=0;
 
 /**
 Return an array of indexes of production ofg the given non terminal.
@@ -32,6 +34,7 @@ int elementforfirstfoundcount=0;
 		}
 
 	}
+
 	if(flag==1){
 		return elementforfirstfoundcount;
 	}
@@ -41,6 +44,7 @@ int elementforfirstfoundcount=0;
 
 	return -1;
 }
+
 
 void first(char c,int n)
 {
@@ -68,7 +72,8 @@ for(int m=0;m<index;m++)
 		 continue;
 		}
 		if(production[productionfound[m]][i] == '!'){
-		continue;
+		episolonfound=1;
+		break;
 	    }
 
         if(islower(production[productionfound[m]][i]))
@@ -78,33 +83,38 @@ for(int m=0;m<index;m++)
 		}
 		else{
 			for(int h=0;h<index;h++){
+				episolontempfound=episolonfound;
 				bufferproductionfound[h]=productionfound[h];
 			}
 
 			first(production[productionfound[m]][i],n);
-			
+		
 			for(int y=0;y<index;y++)
-			{
+			    {	
+				episolonfound=episolontempfound;
 				productionfound[y]=bufferproductionfound[y];
+				}
+
 			}
 
+if(!episolonfound){
+				break;
+			}
+			else{
+                  continue;
+			}
+
+	}			
+		
 		}
-	}
+
  }
 
 }
 
 }
 
-}
 
-
-/**
-void follow(char c)
-{
-
-}
-**/
 
 int main()
 {
