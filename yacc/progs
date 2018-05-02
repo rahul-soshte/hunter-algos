@@ -1,0 +1,234 @@
+Calculator:
+CALCULATOR.l
+%{
+#include<stdio.h>
+#include<math.h>
+#include "y.tab.h"
+%}
+
+%%
+[0-9]+ 	{yylval.dval=atoi(yytext); return NUMBER; }
+[\n] 	{return 0;}
+[ \t] 	{;}
+. 		{return yytext[0];}
+%%
+
+int yywrap(void)
+{	
+	return 1;
+}
+
+
+void yyerror(char *str)
+{	 
+	printf(" Error : %s",str);	
+
+}
+
+int main()
+{	 
+
+	printf("Enter Expression => ");
+	yyparse();
+	return(0);
+
+}
+
+
+CALCULATOR.y
+%{
+#include<stdio.h>
+int yylex(void);
+%}
+%union
+{	 
+	float dval;
+}
+%token <dval> NUMBER
+%left '+' '-'
+%left '*' '/'
+%nonassoc UMINUS
+%type <dval> exp
+%%
+state : exp {printf("Answer = %f",$1);};
+exp : NUMBER
+ | exp '+' exp {$$=$1+$3;}
+ | exp '-' exp {$$=$1-$3;}
+ | exp '*' exp {$$=$1*$3;}
+ | exp '/' exp {$$=$1/$3;}
+ | '('exp')' {$$=$2;}
+ | '-' exp %prec UMINUS {$$=-$2;}
+ ;
+%%
+Output:
+
+
+
+IF
+
+If.l
+%{
+#include "y.tab.h"
+%}
+
+%%
+"if" {return IF;}
+[sS][0-9]* {return S;}
+"<"|">"|"=="|"<="|">="|"!=" {return RELOP;}
+[0-9]+ {return NUMBER;}
+[a-z][a-zA-Z0-9_]* {return ID;}
+\n {return NL;}
+. {return yytext[0];}
+%%
+
+
+If.y
+%{
+#include<stdio.h>
+#include<stdlib.h>
+int count=0;
+%}
+
+%token IF RELOP S NUMBER ID NL
+
+%%
+stmt: if_stmt NL {printf("No. of nested if statements=%d\n",count);exit(0);}
+;
+if_stmt : IF'('cond')''{'if_stmt'}' {count++;}
+      	|S
+;
+cond: x RELOP x 
+;
+x:ID | NUMBER
+;
+%%
+
+int yyerror(char *msg)
+{
+printf("the statement is invalid\n");
+exit(0);
+}
+
+main()
+{
+printf("enter the statement\n");
+yyparse();
+}
+
+Output:
+
+
+
+Variable
+
+C-VARIABLE.l
+%{
+#include"y.tab.h"
+%}
+
+%%
+[a-zA-Z] {return LETTER;}
+[0-9] {return DIGIT;}
+[_] {return UND;}
+[\n] {return NL;}
+. {return yytext[0];}
+%%
+
+
+C-VARIABLE.y
+%{
+#include<stdio.h>
+#include<stdlib.h>
+%}
+
+%token DIGIT LETTER UND NL
+
+%%
+stmt: variable NL {printf("valid identifiers\n"); exit(0);}
+;
+variable: LETTER alphanumeric
+;
+alphanumeric: LETTER alphanumeric | DIGIT alphanumeric | UND alphanumeric | LETTER | DIGIT | UND
+;
+%%
+
+int yyerror(char *msg)
+{
+ printf("Invalid variable\n");
+ exit(0);
+}
+
+main()
+{
+ printf("enter the variable: \n");
+ yyparse();
+}
+
+
+Output:
+
+
+
+SQL PARSER:
+
+sql.l
+
+%{
+#include <stdio.h>
+#include "y.tab.h"
+extern int yylval;
+%}
+
+%%
+select   				 return SELECT;
+from   				 return FROM;
+where   				 return WHERE;
+and   					 return AND;
+[*]   					 return *yytext;
+[,]   					 return *yytext;
+[=]   					 return *yytext;
+[a-zA-Z][a-zA-Z0-9]+    return IDENTIFIER;
+\n   					 return *yytext;
+[ \t]+   				 /* ignore whitespace */;
+%%
+
+
+Sql.y
+
+%{
+#include <stdio.h>
+
+void yyerror (const char *str) {
+    fprintf(stderr, "error: %s\n", str);
+}
+
+int yywrap() {
+    return 1;
+}
+
+main() {
+    yyparse();
+}
+
+%}
+
+%%
+
+%token SELECT FROM IDENTIFIER WHERE AND;
+
+line: select items using condition '\n' { printf("Syntax Correct\n"); };
+
+select: SELECT;
+
+items: '*' | identifiers;
+
+identifiers: IDENTIFIER | IDENTIFIER ',' identifiers;
+
+using: FROM IDENTIFIER WHERE;
+
+condition: IDENTIFIER '=' IDENTIFIER | IDENTIFIER '=' IDENTIFIER AND condition;
+
+%%
+
+Output:
+
