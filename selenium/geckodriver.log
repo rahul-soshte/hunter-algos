@@ -1,0 +1,129 @@
+1528011323392	geckodriver	INFO	geckodriver 0.20.1
+1528011323400	geckodriver	INFO	Listening on 127.0.0.1:47833
+1528011324446	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.imiengQaHzPX"
+1528011328981	Marionette	INFO	Listening on port 44029
+1528011329065	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1528011709089	geckodriver	INFO	geckodriver 0.20.1
+1528011709096	geckodriver	INFO	Listening on 127.0.0.1:45781
+1528011710102	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Pa1Ghr5RQtgS"
+1528011713906	Marionette	INFO	Listening on port 39779
+1528011713917	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1528011762302	geckodriver	INFO	geckodriver 0.20.1
+1528011762308	geckodriver	INFO	Listening on 127.0.0.1:52573
+1528011763314	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.4SFycj9R7Wsi"
+1528011767044	Marionette	INFO	Listening on port 35859
+1528011767130	Marionette	WARN	TLS certificate errors will be ignored for this session
+1528011800601	geckodriver	INFO	geckodriver 0.20.1
+1528011800609	geckodriver	INFO	Listening on 127.0.0.1:59349
+1528011801614	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.wUcRKt0bis7H"
+1528011805364	Marionette	INFO	Listening on port 40767
+1528011805435	Marionette	WARN	TLS certificate errors will be ignored for this session
+1528011886959	geckodriver	INFO	geckodriver 0.20.1
+1528011886967	geckodriver	INFO	Listening on 127.0.0.1:42343
+1528011887971	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.vZMzYLmL1WRH"
+1528011891682	Marionette	INFO	Listening on port 46445
+1528011891794	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1528292241056	geckodriver	INFO	geckodriver 0.20.1
+1528292241070	geckodriver	INFO	Listening on 127.0.0.1:46351
+1528292242134	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.4m3XMi8XTVH8"
+1528292246434	Marionette	INFO	Listening on port 33707
+1528292246457	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:11840): dconf-WARNING **: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1528292421782	geckodriver	INFO	geckodriver 0.20.1
+1528292421788	geckodriver	INFO	Listening on 127.0.0.1:60479
+1528292422789	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.wR7QspKHTtFR"
+1528292426563	Marionette	INFO	Listening on port 44029
+1528292426612	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:12205): dconf-WARNING **: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+console.warn: LoginRecipes: getRecipes: falling back to a synchronous message for: http://127.0.0.1
+console.warn: nsLoginManager: searchLogins: `formSubmitURL` or `httpRealm` is recommended
+console.warn: LoginRecipes: getRecipes: falling back to a synchronous message for: http://127.0.0.1
+console.warn: nsLoginManager: searchLogins: `formSubmitURL` or `httpRealm` is recommended
+1528292641755	geckodriver	INFO	geckodriver 0.20.1
+1528292641763	geckodriver	INFO	Listening on 127.0.0.1:37429
+1528292642768	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.0tobq76iUxyS"
+1528292646534	Marionette	INFO	Listening on port 45465
+1528292646600	Marionette	WARN	TLS certificate errors will be ignored for this session
+1528292648054	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 185"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:185
+onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:201
+_middleware/</<()@resource://activity-stream/lib/Store.jsm:49
+Store/this[method]()@resource://activity-stream/lib/Store.jsm:28
+uninit()@resource://activity-stream/lib/Store.jsm:151
+uninit()@resource://activity-stream/lib/ActivityStream.jsm:300
+uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:73
+shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:169
+callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4436
+observe()@resource://gre/modules/addons/XPIProvider.jsm:2287
+GeckoDriver.prototype.quit()@driver.js:3300
+despatch()@server.js:293
+execute()@server.js:267
+onPacket/<()@server.js:242
+onPacket()@server.js:241
+_onJSONObjectReady/<()@transport.js:500
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 826: Error: Connection is not open.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1528292692876	geckodriver	INFO	geckodriver 0.20.1
+1528292692884	geckodriver	INFO	Listening on 127.0.0.1:55789
+1528292693889	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.EHasH1CGH06d"
+1528292697703	Marionette	INFO	Listening on port 46883
+1528292697815	Marionette	WARN	TLS certificate errors will be ignored for this session
+1528292699342	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 185"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:185
+onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:201
+_middleware/</<()@resource://activity-stream/lib/Store.jsm:49
+Store/this[method]()@resource://activity-stream/lib/Store.jsm:28
+uninit()@resource://activity-stream/lib/Store.jsm:151
+uninit()@resource://activity-stream/lib/ActivityStream.jsm:300
+uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:73
+shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:169
+callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4436
+observe()@resource://gre/modules/addons/XPIProvider.jsm:2287
+GeckoDriver.prototype.quit()@driver.js:3300
+despatch()@server.js:293
+execute()@server.js:267
+onPacket/<()@server.js:242
+onPacket()@server.js:241
+_onJSONObjectReady/<()@transport.js:500
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 826: Error: Connection is not open.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1528292715416	geckodriver	INFO	geckodriver 0.20.1
+1528292715423	geckodriver	INFO	Listening on 127.0.0.1:50643
+1528292716429	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.5vEFpjYrNDG0"
+1528292720320	Marionette	INFO	Listening on port 33015
+1528292720356	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:12987): dconf-WARNING **: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1528292734915	geckodriver	INFO	geckodriver 0.20.1
+1528292734922	geckodriver	INFO	Listening on 127.0.0.1:42215
+1528292735923	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.O2gzoAbY00rd"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1528292740328	Marionette	INFO	Listening on port 44743
+1528292740345	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:13146): dconf-WARNING **: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1528293914540	geckodriver	INFO	geckodriver 0.20.1
+1528293914548	geckodriver	INFO	Listening on 127.0.0.1:47919
+1528293915553	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.c5fplkvr9tAQ"
+1528293919665	Marionette	INFO	Listening on port 42671
+1528293919679	Marionette	WARN	TLS certificate errors will be ignored for this session
+1528294852847	geckodriver	INFO	geckodriver 0.20.1
+1528294852853	geckodriver	INFO	Listening on 127.0.0.1:47263
+1528294853860	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.eq99DtlffPcc"
+1528294857509	Marionette	INFO	Listening on port 45515
+1528294857581	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:14435): dconf-WARNING **: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+JavaScript error: resource://gre/modules/osfile/osfile_async_front.jsm, line 408: Error: OS.File has been shut down. Rejecting post to stat
+1528295353039	geckodriver	INFO	geckodriver 0.20.1
+1528295353047	geckodriver	INFO	Listening on 127.0.0.1:41859
+1528295354053	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.wDG99PSlwMBP"
+1528295358143	Marionette	INFO	Listening on port 45915
+1528295358184	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:14839): dconf-WARNING **: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
