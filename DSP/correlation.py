@@ -1,4 +1,5 @@
 import numpy
+import math
 
 def autocorrelation():
 	signaldata=[]
@@ -36,7 +37,8 @@ def autocorrelation():
 				y[h+o] += a[o][h]
 
 	str3 = ','.join(str(e) for e in y)	
-			
+	
+	print("Correlation coefficient ")		
 	print("Y(n)=["+str3+"]")			
 
 def crosscorrelation():
@@ -56,6 +58,7 @@ def crosscorrelation():
 		my_list2.append(number1) # append to our_list
 
 	origin = int (input("Origin is at position for 2nd signal from the total length of 0-" + str(number3-1)+" "))
+	
 	secondsignalfold=foldsignal(my_list2,origin)
 	# print("X(n)="+my_list)
 	str1 = ','.join(str(e) for e in my_list)
@@ -82,6 +85,74 @@ def crosscorrelation():
 
 	str3 = ','.join(str(e) for e in y)
 	print("Y(n)=["+str3+"]")
+
+
+	if(len(my_list)>len(my_list2)):
+		bigger=len(my_list)
+		flag=1
+	elif len(my_list)==len(my_list2):
+		bigger=len(my_list2)
+		flag=0
+	else:
+		bigger=len(my_list2)
+		flag=2
+
+
+	if flag==0:
+		for i in range(len(my_list),bigger):
+			my_list.append(0)
+	elif flag==1:
+		for i in range(len(my_list2),bigger):
+			my_list2.append(0)
+
+
+	meanX=numpy.mean(my_list)
+
+	meanY=numpy.mean(my_list2)
+
+	print(meanX)
+
+	print(meanY)
+
+	xminusmeansum=[]
+
+	yminusmeansum=[]
+
+	yminusmeansumsquare=0
+	
+	xminusmeansumsquare=0
+
+
+	for i in range(0,len(my_list)):
+		val=my_list[i] - meanX
+		xminusmeansum.append(val)
+		xminusmeansumsquare += (val)**2
+
+	for y in range(0,len(my_list2)):
+		val2 = my_list2[y] - meanY
+		yminusmeansum.append(val2)
+		yminusmeansumsquare += (val2)**2
+
+	print(xminusmeansum)
+	print(yminusmeansum)
+	print(xminusmeansumsquare)
+	print(yminusmeansumsquare)
+	multipliedoutput=0
+
+	for m in range(0, bigger):
+		multipliedoutput += xminusmeansum[m]*yminusmeansum[m]
+
+	print(multipliedoutput)
+
+	rootxminusmeansumsquare=math.sqrt(xminusmeansumsquare)
+	rootyminusmeansumsquare=math.sqrt(yminusmeansumsquare)
+	denom=rootyminusmeansumsquare*rootxminusmeansumsquare
+	r=(multipliedoutput)/denom
+
+	print("Correlation coefficient")
+	print(r)
+
+
 
 def foldsignal(signaldata,origin):
 	my_list4=[]
