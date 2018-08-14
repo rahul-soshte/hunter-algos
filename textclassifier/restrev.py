@@ -27,7 +27,7 @@ def create_doc_vector(corpus,vocabulary):
 def clean(vocab):
 	aandthe=['a','and','the','The']
 	pronoun=['He','it','It','IT']
-	frequent=['of']
+	frequent=['of','in']
 	verbs=['was']
 	merged=aandthe+pronoun+frequent+verbs
 	vocab=set(vocab)
@@ -35,7 +35,7 @@ def clean(vocab):
 	vocab=list(vocab-merged)
 	return vocab
 
-def mapping2posneg()
+# def mapping2posneg()
 
 
 if __name__ == "__main__":
@@ -51,6 +51,6 @@ if __name__ == "__main__":
 	vocab=clean(vocab)
 	print(vocab)
 	vectors=create_doc_vector(corpus,vocab)
-	mapping2posneg
+	# mapping2posneg
 
 
