@@ -1,10 +1,11 @@
-
-import operator
-
 if __name__ == "__main__":
+	
 	val=[]
+	
 	keystream=[]
+	
 	ciphertext=[]
+	
 	autokeykey=7
 
 	text  = "the house is being sold tonight"
@@ -13,15 +14,15 @@ if __name__ == "__main__":
 		if c==' ':
 			pass
 		else:
-			val.append(ord(c)-ord('a'))
+			val.append(ord(c)-ord('A'))
 
 	keystream.append(autokeykey)
 
 	keystream = keystream + val[:-1]
 
 	for i in range(0, len(val)):
-			val2 = (val[i] + keystream[i]) % 26
-			ciphertext.append(val2)
+		val2 = (val[i] + keystream[i]) % 26
+		ciphertext.append(val2)
 
 	for m in range(0, len(ciphertext)):
 		ciphertext[m]=chr( ciphertext[m] + ord('A'))
@@ -38,12 +39,13 @@ if __name__ == "__main__":
 
 	print(plaintext)
 	
-	for m in range(0, len(plaintext)):
-		plaintext[m]=chr( plaintext[m] + ord('A'))	
+	for h in range(0, len(plaintext)):
+		plaintext[h]=chr( plaintext[h] + ord('A'))	
 
-	plaintextstring=''.join(plaintext)
+	# plaintextstring=''.join(plaintext)
 
-	print(plaintextstring)
+	print(plaintext)
+
 
 
 
