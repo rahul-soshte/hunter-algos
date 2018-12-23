@@ -110,7 +110,7 @@ void main()
 		scanf("%d",&choice);
 		switch(choice)
 		{
-			case 1:printf("ENter the no of element to be inserted\n");
+			case 1:printf("Enter the no of element to be inserted\n");
 			scanf("%d",&y);
 			for(i=0;i<y;i++)
 			{

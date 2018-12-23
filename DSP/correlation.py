@@ -166,7 +166,9 @@ def foldsignal(signaldata,origin):
 
 	my_list6=my_list4[::-1]
 	my_list7=my_list5[::-1]
+	
 	mergedsignal=my_list7 + my_list6
+
 	return mergedsignal
 
 if __name__ == "__main__":
