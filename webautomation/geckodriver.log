@@ -365,3 +365,109 @@ IPDL protocol error: Handler returned error code!
 1509637604302	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
 1509637604632	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.pexels.com/"
 1509637610766	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.pexels.com/"
+1549117410104	geckodriver	INFO	geckodriver 0.20.1
+1549117410138	geckodriver	INFO	Listening on 127.0.0.1:56581
+1549117411045	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.V9vzkDhdus8P"
+1549117411737	Marionette	DEBUG	Received observer notification profile-after-change
+1549117412021	Marionette	DEBUG	Received observer notification command-line-startup
+1549117412022	Marionette	DEBUG	Received observer notification nsPref:changed
+1549117412022	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1549117412784	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1549117414440	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1549117414441	Marionette	DEBUG	Waiting for delayed startup...
+1549117414640	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1549117414641	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1549117414645	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1549117414646	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1549117414647	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1549117414713	Marionette	INFO	Listening on port 35711
+1549117414713	Marionette	DEBUG	Remote service is active
+1549117414764	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:38536
+1549117414768	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1549117414768	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1549117430950	geckodriver	INFO	geckodriver 0.20.1
+1549117430956	geckodriver	INFO	Listening on 127.0.0.1:36589
+1549117431960	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.sGG2cu33HiuI"
+1549117432640	Marionette	DEBUG	Received observer notification profile-after-change
+1549117432925	Marionette	DEBUG	Received observer notification command-line-startup
+1549117432925	Marionette	DEBUG	Received observer notification nsPref:changed
+1549117432925	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1549117433660	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1549117435292	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1549117435292	Marionette	DEBUG	Waiting for delayed startup...
+1549117435473	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1549117435473	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1549117435475	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1549117435475	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1549117435476	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1549117435540	Marionette	INFO	Listening on port 42851
+1549117435540	Marionette	DEBUG	Remote service is active
+1549117435576	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:53688
+1549117435593	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1549117435594	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1549122223233	geckodriver	INFO	geckodriver 0.20.1
+1549122223239	geckodriver	INFO	Listening on 127.0.0.1:40195
+1549122224250	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.YvRQWGR8goez"
+1549122224939	Marionette	DEBUG	Received observer notification profile-after-change
+1549122225222	Marionette	DEBUG	Received observer notification command-line-startup
+1549122225222	Marionette	DEBUG	Received observer notification nsPref:changed
+1549122225222	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1549122225913	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1549122227549	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1549122227549	Marionette	DEBUG	Waiting for delayed startup...
+1549122227683	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1549122227683	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1549122227685	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1549122227686	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1549122227686	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1549122227746	Marionette	INFO	Listening on port 45525
+1549122227747	Marionette	DEBUG	Remote service is active
+1549122227764	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:57262
+1549122227769	Marionette	TRACE	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1549122227770	Marionette	TRACE	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:178: ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1549122491469	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Xy9m9GfmI5uQ"
+1549122495569	Marionette	INFO	Listening on port 43105
+1549122495590	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 10823, Gecko_IOThread] WARNING: pipe error (77): Connection reset by peer: file /build/firefox-JcIUVH/firefox-63.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 10823, Gecko_IOThread] WARNING: pipe error (85): Connection reset by peer: file /build/firefox-JcIUVH/firefox-63.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1549122525318	Marionette	INFO	Stopped listening on port 43105
+1549122743640	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.b5KuX3CLLYm9"
+1549122747031	Marionette	INFO	Listening on port 37351
+1549122747054	Marionette	WARN	TLS certificate errors will be ignored for this session
+Marionette threw an error: TypeError: this.curBrowser.contentBrowser is null
+GeckoDriver.prototype.get@chrome://marionette/content/driver.js:1082:3
+
+1549122757127	Marionette	ERROR	[6442450945] No reply from Marionette:Register
+JavaScript error: chrome://marionette/content/listener.js, line 456: TypeError: reply[0] is undefined
+1549122757163	Marionette	ERROR	[6442450947] No reply from Marionette:Register
+JavaScript error: chrome://marionette/content/listener.js, line 456: TypeError: reply[0] is undefined
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+[Parent 11152, Gecko_IOThread] WARNING: pipe error (107): Connection reset by peer: file /build/firefox-JcIUVH/firefox-63.0.3+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1549122802498	Marionette	INFO	Stopped listening on port 37351
